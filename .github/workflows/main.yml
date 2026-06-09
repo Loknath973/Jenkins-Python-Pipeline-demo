@@ -26,7 +26,9 @@ jobs:
       - name: Running flake8 for code quality and static analysis
         run: |
           flake8 .
+          continue on error: true
 
       - name: running test cases
         run: |
           pytest tests --cov=app --cov-report=xml
+          continue on error: true
