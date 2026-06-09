@@ -1,4 +1,4 @@
-name: python cicd
+name: python cicd code
 
 on:
   push:
